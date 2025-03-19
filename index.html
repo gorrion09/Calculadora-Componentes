@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Componentes de PC</h1>
+    <form id="pcForm">
+        <label for="cpu">Procesador:</label>
+        <select id="cpu">
+            <option value="default">Selecciona una opción</option>
+            <option value="100">Intel i5 - 100€</option>
+            <option value="200">Intel i7 - 200€</option>
+            <option value="300">Intel i9 - 300€</option>
+        </select>
+
+        <label for="cpu">Tarjeta Gráfica</label>
+        <select id="cpu">
+            <option value="default">Selecciona una opción</option>
+            <option value="100">RTX 3060 - 150€</option>
+            <option value="200">RTX 3070 - 300€</option>
+            <option value="300">RTX 4090 - 500€</option>
+        </select>
+
+        <label for="cpu">Memoria Ram:</label>
+        <select id="cpu">
+            <option value="default">Selecciona una opción</option>
+            <option value="100">8GB - 40€</option>
+            <option value="200">16GB - 80€</option>
+            <option value="300">32GB - 120€</option>
+        </select>
+
+        <button type="button" onclick="calcularPrecio()">Calcular Precio</button>
+    </form>
+
+        <h2>Total: <span id="precioTotal">0</span>€</h2>
+
+        <script src="script.js"></script>
+</body>
+</html>
